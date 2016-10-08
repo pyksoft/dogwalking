@@ -1,0 +1,14 @@
+<h2>New Dog</h2>
+
+<%= form_for @dog do |d| %>
+    <%= d.label :dog_name %>
+    <%= d.text_field :dog_name %>
+
+    <%= d.label :owner_name %>
+    <%= d.number_field :owner_name %>
+
+    <%= d.label :dog_size %>
+    <%= d.text_field :dog_size %>
+
+    <%= d.submit "Create" %>
+<% end %>

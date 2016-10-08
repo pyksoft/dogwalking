@@ -1,0 +1,7 @@
+<h1>Walkers</h1>
+
+<h2> Welcome to our service</h2>
+
+<% @walkers.each do |walker| %>
+  <p><%= link_to walker.walker_name, walker_path(walker.id) %></p>
+<% end %>
