@@ -4,7 +4,7 @@
 
 <h2>New Dog</h2>
 
-<%= form_for Dog.new do |d| %>
+<%= form_for @dog do |d| %>
     <%= d.label :dog_name %>
     <%= d.text_field :dog_name %>
 
@@ -14,10 +14,10 @@
     <%= d.label :dog_size %>
     <%= d.text_field :dog_size %>
 
-    <%= d.submit "Create" %>
+    <%= hidden_field_tag :walker_id, @walker.id, { :walker_id => @walker.id }%>
+
+    <%= d.submit (@dog.new_record? ? "Create" : "Update") %>
 <% end %>
-
-
 
 <h4>List of dogs</h4>
 
