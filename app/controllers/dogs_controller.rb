@@ -13,6 +13,13 @@ class DogsController < ApplicationController
     end
   end
 
+  def destroy
+    @dog = Dog.find(params[:id])
+    @dog.destroy
+
+    redirect_to @walker
+  end
+
   private
   def dog_params
     params.require( :dog ).permit( :dog_name, :owner_name, :dog_size )
