@@ -1,7 +1,22 @@
-<h1>Walkers</h1>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="css/text" rel="stylesheet" href="/app/assets/stylesheets/application.css">
+  <title>The Dog Walkers</title>
+</head>
+<body class="homepage">
+  <img class="banner" src="http://www.barkdenver.com/files/5714/2126/5232/s5810nb9g6pio7lr.jpg" alt="Welcome">
 
-<h2> Welcome to our service</h2>
+  <h1 class="header1">The Dog Walkers</h1>
 
-<% @walkers.each do |walker| %>
-  <p><%= link_to walker.walker_name, walker_path(walker.id) %></p>
-<% end %>
+  <h2 class="header2"> Welcome to our service</h2>
+  <p class="choosewalker">Please choose one of our walkers</p>
+<div class="walker">
+  <% @walkers.each do |walker| %>
+    <p class="walker_name"><%= link_to walker.walker_name, walker_path(walker.id) %></p>
+  <% end %>
+  </div>
+</body>
+</html>

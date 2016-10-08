@@ -1,3 +1,39 @@
+.homepage {
+  background-color: #EAEDED;
+}
+
+.header1 {
+  text-align: center;
+}
+
+.header2 {
+  text-align: center;
+}
+
+.choosewalker {
+  text-align: center;
+}
+
+.walker .walker_name {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size:20px;
+  font-weight: bold;
+}
+
+.banner {
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:1px;
+  border:1px solid #021a40;
+}
+* {
+  text-decoration: none;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
